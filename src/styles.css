@@ -1,0 +1,78 @@
+/* Cascading Stylesheet for Flex Force web site */
+
+/* ----------------------------------------------------- */
+/* ------------TYPOGRAPHY: HEADING & BODY--------------- */
+/* ----------------------------------------------------- */
+
+/* Reference for AT&T Aleck typeface */
+
+@font-face {
+  font-family: 'AleckSans Regular';
+  src: url('assets/fonts/att-aleck-sans/EOT/ATTAleckSans_W_Rg.eot') format('embedded-opentype'),
+       url('assets/fonts/att-aleck-sans/SVG/ATTAleckSans_W_Rg.svg') format('svg'),
+       url('assets/fonts/att-aleck-sans/TTF/ATTAleckSans_W_Rg.ttf') format('truetype'),
+       url('assets/fonts/att-aleck-sans/WOFF/ATTAleckSans_W_Rg.woff') format('woff'),
+       url('assets/fonts/att-aleck-sans/WOFF2/ATTAleckSans_W_Rg.woff2') format('woff2');
+}
+
+/* These are the font families of all the headings and body copy */
+body{
+	font-family: "AleckSans Regular";
+	font-size: 1.0em;	
+	margin: auto;
+	color: #959595;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: "Aleck Sans Thin", Calibri, Arial, sans-serif;
+}
+
+/* True for all headings */
+h1, h2, h3 ,h4, h5, h6{
+	color: #0057B8;
+	padding: .1em 0;
+	margin: .1em 0;
+}
+
+/* Style for individual headings */
+h1{
+    font-size: 2.25em;
+  }
+  
+  h2{
+    font-size: 1.75em;
+  }
+  
+  h3{
+    font-size: 1.375em;
+  }
+  
+  h4{
+    font-size: 1em;
+  }
+  
+  h5{
+    font-size: 1em;
+  }
+  
+  h6{
+    font-size: 1em;
+  }
+
+/*==============FOOTER STYLE============*/
+
+footer{
+	margin: 0px auto;
+	height: 100px;
+	width: 100%;
+	padding: 30px;
+}
+
+footer p{
+    font-family: "Aleck Sans", Calibri, Arial, sans-serif;
+    font-size: 0.75em;	
+    margin: auto;
+	text-align: center;
+	color: #959595;	
+	width: 90%;
+}

@@ -1,0 +1,17 @@
+.navbar {
+	padding: .5rem 0;
+	margin-bottom: 2rem;
+}
+
+.dropdown-menu.show {
+	left: -5rem;
+}
+
+.dropdown-toggle::after {
+	display: none;
+}
+
+.container-fluid {
+	padding-left: 40px;
+	padding-right: 40px;
+}
