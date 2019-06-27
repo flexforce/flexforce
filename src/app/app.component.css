@@ -15,3 +15,8 @@
 	padding-left: 40px;
 	padding-right: 40px;
 }
+
+/*  Change the background color on the navigation bar to AT&T Blue #009FDB  */
+.bg-primary {
+    background-color: #009FDB!important;
+}
