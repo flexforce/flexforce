@@ -1,72 +1,76 @@
 <!-- remove this welcome text before publishing -->
 <p>Welcome to the Flex Force HOME Page!</p>
-<br/>
+<br />
 
 <div class="container">
-<!-- add image bar with hyperlink -->
+    <!-- add image bar with hyperlink -->
     <div class="row">
         <div class="col">
-            <a routerLink="/about"><img src="assets/images/image_bar2.png" class="img-fluid" alt="Go to About"/></a>
+            <a routerLink="/about"> <img src="assets/images/image_bar2.png" class="img-fluid" alt="Go to About" /></a>
         </div>
     </div>
 
-    <!-- add hex icons with hyperlinks -->        
+    <!-- add hex icons with hyperlinks -->
+    <div class="hex-nav row">
+        <div class="col-md-3 col-sm-6 col-6">
+            <img src="assets/images/hex_talent.png" class="img-fluid" alt="Go to Talent" (click)="nav('talent')"
+                (mouseover)="nav('talent')" />
+        </div>
+        <div class="col-md-3 col-sm-6 col-6">
+            <img src="assets/images/hex_solution.png" class="img-fluid" alt="Go to Solutions" (click)="nav('solutions')"
+                (mouseover)="nav('solutions')" />
+        </div>
+        <div class="col-md-3 col-sm-6 col-6">
+            <img src="assets/images/hex_recruiting.png" class="img-fluid" alt="Go to Recruiting"
+                (click)="nav('recruiting')" (mouseover)="nav('recruiting')" />
+        </div>
+        <div class="col-md-3 col-sm-6 col-6">
+            <img src="assets/images/hex_cofw.png" class="img-fluid" alt="Go to Chunk of Work"
+                (click)="nav('chunkofwork')" (mouseover)="nav('chunkofwork')" />
+        </div>
+    </div>
+
     <div class="row">
-        <div class="col-md-4">
-            <p>column 1 of 3</p>
-        </div>
-        <div class="col-md-4">
-            <a routerLink="/talent"><img src="assets/images/hex_talent.png" alt="Go to Talent"/></a>
-        </div>
-        <div class="col-md-4">
-            <p>column 3 of 3</p>
-        </div>
-        <div class="col-md-4">
-            <a routerLink="/chunkofwork"><img src="assets/images/hex_cofw.png" alt="Go to Chunk of Work"/></a>  
-        </div>        
-        <div class="col-md-4">
-            <p>column 2 of 3</p>
-        </div>
-        <div class="col-md-4">
-                <a routerLink="/solutions"><img src="assets/images/hex_solution.png" alt="Go to Solutions"/></a>
-       </div>
-       <div class="col-md-4">
-            <p>column 1 of 3</p>
-        </div> 
-       <div class="col-md-4">
-                <a routerLink="/recruiting"><img src="assets/images/hex_recruiting.png" alt="Go to Recruiting"/></a>
-        </div>
-        <div class="col-md-4">
-            <p>column 3 of 3</p>
+        <div class="col-md-12">
+            <div [hidden]="navRoute !== 'talent'">
+                <!-- Talent -->
+                <h3>Talent</h3>
+                <p>Need help delivering your technology or business solution?</p>
+                <p>Flex Force offers single assignments to a full up SAFe SCRUM team.</p>
+                <a routerLink="/talent">Learn more &#8811;</a>
+            </div>
+
+            <div [hidden]="navRoute !== 'solutions'">
+                <!-- Solutions -->
+                <h3>Solutions</h3>
+                <p>Ready to just get innovating?</p>
+                <p>Flex Force can bring your vision to life! Our Innovation Squads conceptualize your vision.</p>
+                <a routerLink="/solutions">Learn more &#8811;</a>
+            </div>
+
+            <div [hidden]="navRoute !== 'recruiting'">
+                <!-- Recruiting -->
+                <h3>Recruiting</h3>
+                <p>Trying to find the best people for your team?</p>
+                <p>We recruit all the time. Let us do it for you.</p>
+                <a routerLink="/recruiting">Learn more &#8811;</a>
+            </div>
+
+            <div [hidden]="navRoute !== 'chunkofwork'">
+                <!-- Chunk of Work -->
+                <h3>Chunk of Work</h3>
+                <p>Got a highly visible project that needs to get done fast?</p>
+                <p>Flex Force can get that “Chunk of Work” done!</p>
+                <a routerLink="/chunkofwork">Learn more &#8811;</a>
+            </div>
+
+            <div [hidden]="navRoute !== 'about'">
+                <p>Go to About</p>
+            </div>
         </div>
     </div>
 
-<!-- Need to add the pop-up that will appear when a user clicks/hovers over each of the elements.  This should replace the routerLink attribute on each element. -->
+    <!-- Need to add the pop-up that will appear when a user clicks/hovers over each of the elements.  This should replace the routerLink attribute on each element. -->
 
-<!-- This is the text for the pop-ups -->
-    <div>
-    <!-- Talent -->
-        <h3>Talent</h3>
-        <p>Need help delivering your technology or business solution?</p>
-        <p>Flex Force offers single assignments to a full up SAFe SCRUM team.</p>
-        <a routerLink="/talent">Learn more &#8811;</a>
-
-    <!-- Solutions -->
-        <h3>Solutions</h3>
-        <p>Ready to just get innovating?</p> 
-        <p>Flex Force can bring your vision to life!  Our Innovation Squads conceptualize your vision.</p>
-        <a routerLink="/solutions">Learn more &#8811;</a>
-
-    <!-- Recruiting -->
-        <h3>Recruiting</h3>
-        <p>Trying to find the best people for your team?</p>
-        <p>We recruit all the time.  Let us do it for you.</p>
-        <a routerLink="/recruiting">Learn more &#8811;</a>
-
-    <!-- Chunk of Work -->
-        <h3>Chunk of Work</h3>
-        <p>Got a highly visible project that needs to get done fast?</p>
-        <p>Flex Force can get that “Chunk of Work” done!</p>
-        <a routerLink="/chunkofwork">Learn more &#8811;</a>
-    </div>
+    <!-- This is the text for the pop-ups -->
 </div>
