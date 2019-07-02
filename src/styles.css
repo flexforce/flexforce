@@ -85,3 +85,8 @@ footer p{
 	color: #959595;	
 	width: 90%;
 }
+
+.blockquote {
+  font-size: 1.5rem;
+  padding: 10px 0px;
+}

@@ -1,10 +1,6 @@
-<!-- remove this welcome text before publishing -->
-<p>Welcome to the Flex Force HOME Page!</p>
-<br />
-
 <div class="container">
     <!-- add image bar with hyperlink -->
-    <div class="row">
+    <div class="bar-nav row">
         <div class="col">
             <a routerLink="/about"> <img src="assets/images/image_bar2.png" class="img-fluid" alt="Go to About" /></a>
         </div>
@@ -30,6 +26,7 @@
         </div>
     </div>
 
+    <!-- This text pop-up will appear when a user hovers over each of the hex elements. -->
     <div class="row">
         <div class="col-md-12">
             <div [hidden]="navRoute !== 'talent'">
@@ -68,9 +65,5 @@
                 <p>Go to About</p>
             </div>
         </div>
-    </div>
-
-    <!-- Need to add the pop-up that will appear when a user clicks/hovers over each of the elements.  This should replace the routerLink attribute on each element. -->
-
-    <!-- This is the text for the pop-ups -->
+    </div>    
 </div>
