@@ -1,0 +1,7 @@
+.card {
+    border: none;
+}
+
+.card li {
+    list-style-image: url("/assets/images/att_globe_grey_16x16.png");
+}

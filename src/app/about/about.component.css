@@ -1,4 +1,36 @@
+.card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card img {
+    padding: 2px;
+}
+
+.card h2 {
+    text-align: center;
+}
+
+.card li {
+    list-style-image: url("/assets/images/att_globe_grey_16x16.png");
+}
+
+.card-header {
+    background-color: #959595;
+}
+
+.card-header h2 {
+    color: #FFFFFF;
+}
+
+.card-header-links {
+    background-color: #0057B8;
+}
+
+.card-header-links h2 {
+    color: #FFFFFF;
+}
+
 .nameplate {
-    margin: -9px;
     padding: 0px;
 }

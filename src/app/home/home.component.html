@@ -2,7 +2,8 @@
     <!-- add image bar with hyperlink -->
     <div class="bar-nav row">
         <div class="col">
-            <a routerLink="/about"> <img src="assets/images/image_bar2.png" class="img-fluid" alt="Go to About" /></a>
+            <a routerLink="/about"> <img src="assets/images/image_bar2.png" class="mx-auto d-block img-fluid"
+                    alt="Go to About" /></a>
         </div>
     </div>
 
@@ -27,43 +28,55 @@
     </div>
 
     <!-- This text pop-up will appear when a user hovers over each of the hex elements. -->
-    <div class="row">
-        <div class="col-md-12">
+    <div class="row text-popup">
+        <div class="col-md-3">
             <div [hidden]="navRoute !== 'talent'">
                 <!-- Talent -->
-                <h3>Talent</h3>
-                <p>Need help delivering your technology or business solution?</p>
-                <p>Flex Force offers single assignments to a full up SAFe SCRUM team.</p>
-                <a routerLink="/talent">Learn more &#8811;</a>
+                <h2>Talent</h2>
+                <p>Need help delivering your technology or business solution? Flex Force offers single assignments to a
+                    full up SAFe SCRUM team.</p>
+                <a routerLink="/talent">
+                    <h3>Learn more &#8811;</h3>
+                </a>
             </div>
-
+        </div>
+        <div class="col-md-3">
             <div [hidden]="navRoute !== 'solutions'">
                 <!-- Solutions -->
-                <h3>Solutions</h3>
-                <p>Ready to just get innovating?</p>
-                <p>Flex Force can bring your vision to life! Our Innovation Squads conceptualize your vision.</p>
-                <a routerLink="/solutions">Learn more &#8811;</a>
+                <h2>Solutions</h2>
+                <p>Ready to just get innovating? Flex Force can bring your vision to life! Our Innovation Squads
+                    conceptualize your vision.</p>
+                <a routerLink="/solutions">
+                    <h3>Learn more &#8811;</h3>
+                </a>
             </div>
-
+        </div>
+        <div class="col-md-3">
             <div [hidden]="navRoute !== 'recruiting'">
                 <!-- Recruiting -->
-                <h3>Recruiting</h3>
-                <p>Trying to find the best people for your team?</p>
-                <p>We recruit all the time. Let us do it for you.</p>
-                <a routerLink="/recruiting">Learn more &#8811;</a>
+                <h2>Recruiting</h2>
+                <p>Trying to find the best people for your team? We recruit all the time. Let us do it for you.</p>
+                <a routerLink="/recruiting">
+                    <h3>Learn more &#8811;</h3>
+                </a>
             </div>
-
+        </div>
+        <div class="col-md-3">
             <div [hidden]="navRoute !== 'chunkofwork'">
                 <!-- Chunk of Work -->
-                <h3>Chunk of Work</h3>
-                <p>Got a highly visible project that needs to get done fast?</p>
-                <p>Flex Force can get that “Chunk of Work” done!</p>
-                <a routerLink="/chunkofwork">Learn more &#8811;</a>
+                <h2>Chunk of Work</h2>
+                <p>Got a highly visible project that needs to get done fast? Flex Force can get that “Chunk of Work”
+                    done!</p>
+                <a routerLink="/chunkofwork">
+                    <h3>Learn more &#8811;</h3>
+                </a>
             </div>
+        </div>
 
+        <div class="col-md-3">
             <div [hidden]="navRoute !== 'about'">
                 <p>Go to About</p>
             </div>
         </div>
-    </div>    
+    </div>
 </div>

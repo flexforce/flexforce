@@ -1,6 +1,5 @@
-/* -- Need to find a way to center this image -- */
-.bar-nav img {
-    margin: auto;
+.bar-nav {
+    margin: auto 15px;
 }
 
 .hex-nav {
@@ -9,4 +8,13 @@
 
 .hex-nav .col-md-3 {
     padding: 0;
+}
+
+.row {
+    text-align: center;
+}
+
+.text-popup {
+    height: 170px;
+    padding: 10px;
 }

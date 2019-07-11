@@ -25,11 +25,16 @@
 }
 
 /* These are the font families of all the headings and body copy */
+
+html {
+  /* max-height: 100%; */
+}
+
 body{
 	font-family: "AleckSans Regular";
 	font-size: 1.0em;	
 	margin: auto;
-	color: #959595;
+  color: #959595;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -68,23 +73,7 @@ h1{
     font-size: 1em;
   }
 
-/*==============FOOTER STYLE============*/
 
-footer{
-	margin: 0px auto;
-	height: 100px;
-	width: 100%;
-	padding: 30px;
-}
-
-footer p{
-    font-family: "AleckSans Regular", Calibri, Arial, sans-serif;
-    font-size: 0.75em;	
-    margin: auto;
-	text-align: center;
-	color: #959595;	
-	width: 90%;
-}
 
 .blockquote {
   font-size: 1.5rem;

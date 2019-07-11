@@ -16,6 +16,25 @@
 	padding-right: 40px;
 }
 
+/*==============FOOTER STYLE============*/
+
+footer{
+	/* margin: 0px auto; */
+	/* height: 100px; */
+	width: 100%;
+	/* padding: 30px; */
+	margin: 30px 0;
+}
+
+footer p{
+  font-family: "AleckSans Regular", Calibri, Arial, sans-serif;
+  font-size: 0.75em;	
+  margin: auto;
+	text-align: center;
+	color: #959595;	
+	width: 90%;
+}
+
 /*  Change the background color on the navigation bar to AT&T Blue #009FDB  */
 .bg-primary {
     background-color: #009FDB!important;

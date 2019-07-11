@@ -1,0 +1,11 @@
+.card {
+    border: none;
+}
+
+.card img {
+    padding: 2px;
+}
+
+.card h5 {
+    text-align: center;
+}

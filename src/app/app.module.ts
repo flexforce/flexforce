@@ -10,18 +10,16 @@ import { HomeComponent } from './home/home.component';
 import { SolutionsComponent } from './solutions/solutions.component';
 import { RecruitingComponent } from './recruiting/recruiting.component';
 import { ChunkofworkComponent } from './chunkofwork/chunkofwork.component';
-import { BragboardComponent } from './bragboard/bragboard.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent },
-  { path: 'talent', component: TalentComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'solutions', component: SolutionsComponent },
-  { path: 'recruiting', component: RecruitingComponent },
-  { path: 'chunkofwork', component: ChunkofworkComponent },
-  { path: 'bragboard', component: BragboardComponent },
+  { path: 'home', component: HomeComponent, data: { title: 'Home' } },
+  { path: 'talent', component: TalentComponent, data: { title: 'Talent' } },
+  { path: 'contact', component: ContactComponent, data: { title: 'Contact' } },
+  { path: 'about', component: AboutComponent, data: { title: 'About' } },
+  { path: 'solutions', component: SolutionsComponent, data: { title: 'Solutions' } },
+  { path: 'recruiting', component: RecruitingComponent, data: { title: 'Recruiting' } },
+  { path: 'chunkofwork', component: ChunkofworkComponent, data: { title: 'Chunk of Work' } }
 ];
 
 @NgModule({
@@ -33,8 +31,7 @@ const appRoutes: Routes = [
     HomeComponent,
     SolutionsComponent,
     RecruitingComponent,
-    ChunkofworkComponent,
-    BragboardComponent
+    ChunkofworkComponent
   ],
   imports: [
     BrowserModule,
